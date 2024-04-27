@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koe-Activity</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styleactivity.css">
+    <link rel="stylesheet" href="finalform.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body>
+    <nav>
+        <div id="menu-area" id="home">
+            <div class="logo">
+                <a href="index.html"><img src="newlogo.png" alt=""></a>
+            </div>
+            <ul id="hanusha">
+                <li class="hidden"><a href="index.html">Home</a></li>
+                <li class="hidden"><a href="#aboutt">About</a></li>
+                <li class="hidden"><a href="#spec">Specialities</a></li>
+                <li class="hidden"><a href="#review">Reviews</a></li>
+                <li class="hidden"><a href="Gallery.html">Gallery</a></li>
+                <li class="hidden"><a href="#activity">Activities</a></li>
+                <li class="hidden"><a href="#contact">Contact</a></li>
+                <li onclick=showSidebar() id="show"> <a href="#" id="eq">=</a></li>               
+            </ul>
+
+
+
+        </div>
+        <ul class="sidebar">
+            <li onclick=hideSidebar() id="hide"><a href="#">X</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutt">About</a></li>
+            <li><a href="#spec">Specialities</a></li>
+            <li><a href="#review">Reviews</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="#activity">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="header" id="workshop" id="activity">
+        <div id="workshop-in">
+                <div class="out_side_content">
+                    <h1>WORKSHOP ALERT !</h1>
+                    <p>Latte love incoming...</p>
+                </div>
+                <div class="counters">
+                    <div class="time">
+                        <span id="days" class="numbers">00</span>
+                        <span> Days</span>
+                    </div>
+
+                    <div class="time">
+                        <span id="hours" class="numbers">00</span>
+                        <span> Hours</span>
+                    </div>
+
+                    <div class="time">
+                        <span id="minutes" class="numbers">00</span>
+                        <span>minutes</span>
+                    </div>
+
+                    <div class="time">
+                        <span id="seconds" class="numbers">00</span>
+                        <span>Seconds</span>
+                    </div>
+        </div>
+
+
+
+        <div id="button-popup">
+            <button type="submit" id="btn" onclick="openPopup()">Register here</button>
+            <div class="form-container" id="popup-id" >
+                <h2>Register Here</h2>
+                <form action="/submit-form" method="POST">
+                    <div class="cross"><button onclick="clspopup()"><i class="fa-solid fa-x"></i></button></div>
+                    <div class="name-container">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Name" id="name" name="name">
+                    </div>
+                    <div class="email-container">
+                        <label for="email-form"></label>
+                        <input type="email" placeholder="Email" id="email-form" name="email">
+                    </div>
+                    <div class="number-container">
+                        <label for="number"></label>
+                        <input type="number" placeholder="Number" id="number" name="number">
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="btn1" onclick="closePopup()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        <!--<div class="vv"><p>Melodic duet serenades hearts, entwining souls in enchanting romantic resonance.</p></div>
+        <div class="vidcontainer">
+            
+            <div class="vids">
+                <video width="320" height="540" controls>
+                <source src="singg.mp4" type="video/mp4">                
+                Your browser does not support the video tag.
+              </video></div>
+            <div class="vids"><video width="320" height="540" controls>
+                <source src="rom.mp4" type="video/mp4">                
+                Your browser does not support the video tag.
+              </video></div>
+        </div> -->
+
+<section>
+        <section class="prlx-4">
+            <div class="prlx-inner">
+               <div class="ws"><h2><b>WORKSHOP &nbsp; TO &nbsp;  GET &nbsp; YOU &nbsp;  THROUGH &nbsp; YOUR &nbsp;  DELIGHT !</b></h2></div>
+            </div>   
+        </section>
+
+
+
+        <div class="wrapper">
+            <div class="wrapper1">
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url('identification.jpg')">
+                                <div class="inner">
+                                    <p>Coffee Identification</p>
+                                    <!-- <span>Lorem ipsum</span> -->
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Explore the origins of each bean, from Ethiopia's highlands to Guatemala's volcanic soils. 
+                                        Experience distinct flavors from a rich tapestry of regional 
+                                        profiles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url('grading.jpg')">
+                                <div class="inner">
+                                    <p>Grading Excellence</p>
+                                    <!-- <span>Lorem ipsum</span> -->
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Coffee grading is a refined art. 
+                                        Rigorous inspection of size, shape, color, and defects ensures only the finest beans 
+                                        receive the coveted stamp of approval.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url('roasting.jpg')">
+                                <div class="inner">
+                                    <p>Roasting Alchemy</p>
+                                    <!-- <span>Lorem ipsum</span> -->
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>In roasteries, green beans transform into fragrant, caramel-hued gems. Roasters orchestrate 
+                                        temperature, time, and technique to coax out unique flavors.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper2">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" style="background-image: url('blending.jpg')">
+                            <div class="inner">
+                                <p>Blending Harmony</p>
+                                <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Master blenders craft harmonious blends of beans from different regions. The art requires 
+                                    an intuitive understanding of flavor profiles across the palate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" style="background-image: url('cupping.jpg')">
+                            <div class="inner">
+                                <p>Cupping Revelation</p>
+                                <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <p>Cupping unveils the true character of beans. Experts slurp and savor, 
+                                    discerning flavors and aromas. This is 
+                                    where intricate tasting notes are revealed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+
+
+        <section class="prlx-3" id="live">
+            <div class="prlx-inner">
+                <div class="lstream"><h2 id="lf">LIVE &nbsp; STREAMS &nbsp; AND &nbsp; SHOWS !</h2></div>
+                <div class="wrapper3">
+        </section>
+        <div class="aboutstr"><b>Espresso machines hiss like applause, the clink of ceramic a standing ovation. <br>
+            In the cafe, every performance is a celebration, every sip a silent cheer.<br>
+            Here, creativity is the currency, and every cup holds a potential masterpiece...</b></div>
+        <div class="wrapper3">            
+            <div class="container-wrapper">
+                <input type="radio" name="sld-live" id="c1" checked class="schi">
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">🎺</div>
+                        <div class="description">
+                            <h4>Jazz Under the Stars</h4>
+                            <!--<p>Transform the cafe into a celestial jazz haven. Experience live performances under the stars, 
+                                where each note is a melodic journey resonating long after the final chord.
+                            </p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="sld-live" id="c2" checked class="schi" class="im">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">🎸</div>
+                        <div class="description">
+                            <h4>Acoustic Serenity</h4>
+                            <!--<p>Indulge in acoustic bliss and coffee kisses. Singer-songwriters create intimate moments with 
+                                soulful melodies, weaving their music seamlessly with the comforting aroma of freshly brewed 
+                                coffee.
+                            </p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="sld-live" id="c3" checked class="schi">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">🎤</div>
+                        <div class="description">
+                            <h4>Open Mic Extravaganza</h4>
+                            <!--<p>Witness open mic nights unfold in cafes, a dynamic stage for emerging talents. Poets, 
+                                musicians, and comedians ignite the venue with raw creativity, fostering a sense of community
+                                and diverse artistic expression.
+                            </p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="sld-live" id="c4" checked class="schi">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">🪩</div>
+                        <div class="description">
+                            <h4>DJ Beats & Espresso Vibes</h4>
+                            <!--<p>Immerse yourself in the electrifying fusion of DJ beats and espresso treats. The cafe 
+                                transforms into a vibrant hub of electronic music, where thumping bass, LED lights, and the 
+                                hum of coffee grinders create an unforgettable sensory experience.</p> -->
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="footer">
+            <div class="footleft">
+                <p><img src="newlogo.png" id="footerlogo" id="activity"/></p>
+                <div class="details">
+                    <p>Timings: 11:30am to 12:30am</p>
+                    <p>✉ abc@gmail.com</p>
+                    <p>📞 (91) 999999999</p>
+                    <p>📍 205, International Finance Centre, VIP Road, opp. Fire Station, Vesu, Surat, Gujarat 395007</p>
+                </div>
+                <div class="footer-social-icon1">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footright footright-zoom">
+                <a href="https://www.google.com/maps/place/KOE+-+The+Kafe/@21.1415096,72.7810363,17z/data=!4m16!1m9!3m8!1s0x3be05327ccb9c45f:0xe73ce99228e97293!2sKOE+-+The+Kafe!8m2!3d21.1415096!4d72.7810363!9m1!1b1!16s%2Fg%2F11vbdr9wgd!3m5!1s0x3be05327ccb9c45f:0xe73ce99228e97293!8m2!3d21.1415096!4d72.7810363!16s%2Fg%2F11vbdr9wgd?entry=ttu">
+                <img src="map.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="sidebarnav.js"></script>
+    <script src="script.js"></script>
+    <script src="workshop.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

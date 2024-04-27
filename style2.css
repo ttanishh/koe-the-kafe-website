@@ -1,0 +1,402 @@
+/* This is for the Reservation of the table */
+.Reservation {
+    /* Keep your existing styles for the background image */
+    background-image: url("https://media.istockphoto.com/id/1467739359/photo/cup-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.jpg?s=1024x1024&w=is&k=20&c=vQsW4C4AsnwZ0i7tSrHO6QyGMnfKS4eyhUXdsDED5wo=");
+    /* Ensure position relative for positioning children elements */
+    position: relative;
+    min-height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.reservation-table {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
+    padding: 20px;
+    max-width: 500px; /* Adjust the width as necessary */
+    /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for the form */
+    /* box-shadow: 00 10px rgba(0, 0, 0, 0.3); Add a slight shadow for depth */
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally and vertically */
+    text-align: center; /* Center text within inputs */
+}
+
+.name-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%; /* Occupy full width */
+    max-width: 400px; /* Limit width for better readability */
+}
+.reservation-form input{
+    margin: 1rem;
+    width: 900px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px 0; /* Add some padding to the input */
+    box-sizing: border-box;
+
+}
+
+.reservation-form textarea{
+    margin: 1rem;
+    /* width:auto; */
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px 0; /* Add some padding to the input */
+    box-sizing: border-box;
+}
+.reservation-form input::placeholder{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    padding: 3px;
+    padding-bottom: 23px;
+}
+.reservation-form textarea::placeholder{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    padding-bottom: 23px;
+}
+
+.reservation-form button{
+    margin: 1rem;
+}
+
+#button{
+    display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #544639; /* Brown */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+    
+}
+#button:hover{
+    background-color: #fc6; /* Yellow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+/* This is for the menu list */
+
+
+.Menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 44px;
+    margin: 3px;
+    /* background-color: antiquewhite; */
+}
+.Menu{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: #544639;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    padding: 3px;
+}
+
+#first-list{
+    align-items: flex-start;
+}
+
+#second-list{
+    align-items: flex-end;
+}
+
+
+.menu-item img {
+    width: 200px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+    box-shadow: none; /* Initial box-shadow set to none */
+}
+
+.menu-item img:hover {
+    box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Adding box-shadow on hover */
+}
+
+
+/* .details{
+   
+    margin-left: 30px;
+} */
+
+/* .details-right{
+    margin-right: 30px;
+} */
+
+/* .details h2{
+    color: #fc6;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+} */
+
+/* .details p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    text-align: left;
+} */
+
+/* .details-right h2{
+    color: #fc6;
+    font-size: 1.25rem;
+    line-height: 1.75rem; */
+    /* margin: 20px 0; */
+    /* margin-left: 25px; */
+    /* columns: #555;
+    text-align: center; */
+    
+/* } */
+
+
+/* .details-right p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    margin-left: 42%;
+} */
+
+
+#menu-button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+}
+
+#menu-button:hover{
+    background-color: #544639; /* Yellow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+      
+}
+.menu-button{
+    display: block;
+    margin-left: 50%;
+    margin-top: 10%;
+    height: 20px;
+    width: 30px;
+}
+
+
+
+/* parallex */
+
+.parallex-inner h1{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin-top: 1px;
+}
+
+.parallex-2{
+    background: url('antique-cafe-bg-04.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallex-inner{
+    padding: 10% 0;
+}
+
+
+
+
+/* lavyana  */
+
+
+
+/* #ktk{
+    font-size:120px;
+    text-align:center;
+} */
+
+
+
+
+
+/* #p1{
+    text-align:center;
+    color:rgb(65, 42, 3);
+    font-size:21px;
+}
+#p2{
+    color:rgb(65, 42, 3);
+    font-size:40px;
+    text-align:center;
+} */
+
+
+
+
+/*h2{
+    font-size:32px;
+    color:#555;
+    text-align:center;
+    font-weight:300;
+    margin:20px 0 10px;
+}*/
+
+
+ /* #p3{
+    font-size:16px;
+    color:#555;
+    text-align:left;
+    line-height:30px;
+    margin:0 50px 40px;
+
+} */
+
+/* .parallax-2{
+    background: url('Parallax2Image.jpg') center center no-repeat fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+} */
+
+.parallax-3{
+    background:url('antique-cafe-bg-03.jpg') center center no-repeat fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.parallax-4{
+    background:url('antique-cafe-bg-04.jpg') center center no-repeat fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+#cmsee{
+    font-size:21px;
+    color: white;
+    text-align: center;
+}
+/* #create{
+    text-align: center;
+    color: white
+    font size: 40px;
+} */
+
+
+/* /slider/ */
+.mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+  .w3-content{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mySlides{
+    padding:33px;
+    max-width:500px
+  }
+  .mySlides p{
+    padding:18px;
+  }
+  .mySlides h2{
+    text-align: center;
+  }
+  .w3-left {
+    margin-left:183px;
+  }
+  .w3-right {
+    margin-right:183px;
+  }
+  .w3-center
+  {
+    width:100%
+  }
+
+
+/* /abt04/ */
+/* .abt04{ 
+    display:flex;
+    justify-content: space-around;
+    
+} */
+
+.content{
+    background-color: #4a4a4a;
+    padding:5px;
+    flex-basis:30%;
+    border-radius:10px;
+}
+.content p{
+    text-align: center;
+    color:white;
+    font-size:16px;
+    
+    text-align:justify;
+    line-height:30px;
+    margin:0 50px 40px;
+}
+.content p span{
+    color:rgb(246, 177, 88);
+}
+.content p span i{
+    font-size:18px;
+    padding:5px;
+}
+.content1{
+    font-size:19px;
+    color:white;
+}
+.content2{
+    font-size:14px;
+    color:white;
+}
+.content .by{
+    color:rgb(246, 177, 88);
+    padding:10px;
+}

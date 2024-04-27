@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koe-The Kafe</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <lnk rel="stylesheet" href="style2.css">
+   <!--  <link rel="stylesheet" href="Gallery CSS.css"> -->
+    <link rel="stylesheet" href="formreserve.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">   
+</head>
+<body onload="slider()">
+
+
+    <div id="prld"></div>
+        <div class="bnner" id="home">
+            <div class="sldr">
+                <img src="hero-slider-1.jpg" id="sldimg">
+            </div>
+            <div class="overlay">                
+                <div class="banner">
+                    <div class="intro">
+                        <div class="introtext">
+                            <b>
+                                <span>K</span>
+                                <span>O</span>
+                                <span>E</span>
+                                <span>-</span>
+                                <span>T</span>
+                                <span>H</span>
+                                <span>E&nbsp;</span>                                     
+                                <span>K</span>
+                                <span>A</span>
+                                <span>F</span>
+                                <span>E</span> 
+                            </b>
+                            <p id="subtext"><br><i>❛Espresso Yourself❜</i></p>                                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+     
+        <nav>
+            <div id="menu-area" id="home">
+                <div class="logo">
+                    <a href="#home"><img src="newlogo.png" alt=""></a>
+                </div>
+                <ul id="hanusha">
+                    <li class="hidden"><a href="#home">Home</a></li>
+                    <li class="hidden"><a href="#aboutt">About</a></li>
+                    <li class="hidden"><a href="#spec">Specialities</a></li>
+                    <li class="hidden"><a href="#review">Reviews</a></li>
+                    <li class="hidden"><a href="Gallery.html">Gallery</a></li>
+                    <li class="hidden"><a href="activity.html">Activities</a></li>
+                    <li class="hidden"><a href="#contact">Contact</a></li>
+                    <li onclick=showSidebar() id="show"> <a href="#">=</a></li>                   
+                </ul>        
+            </div>
+
+            <ul class="sidebar">
+                <li onclick=hideSidebar() id="hide"><a href="#">X</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutt">About</a></li>
+                <li><a href="#spec">Specialities</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+
+    <div class="header-slider" id="aboutt"> 
+            <div id="abtstart">
+            <img src="AboutUs.jpg" id="aboutusimg" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="2000"/>
+            <div class="abt03">
+                <p id="p2"><b>ABOUT US</b></p>
+                <div data-aos="zoom-out">
+                       <div id="p3" >Kôė was born out of a passion for coffee and a desire to provide a micro scale coffee roasting and food curation experience in a serene ambience, creating a complete package for the clientele. This coffee roasting cafe is dedicated to delivering high-quality roasted beans and perfecting roasting techniques to showcase the richness and diversity of coffee flavours from around the world.</div>
+                </div>       
+            </div>
+        </div>
+    </div> 
+
+
+
+
+    <section class="parallax-2"> 
+        <div class="parallax-inner">
+            <div class="section-title text-center center">
+                <p id="create">WE CREATE DELICIOUS EXPERIENCES!</p>
+            </div>
+        </div>
+    </section> 
+
+
+
+
+    <div class="abtroaster"> 
+        <div class="sub-abtroaster">
+            <p id="abti"><b>TASTE THE CRAFTMANSHIP</b></p>
+            <div class="sub-sub-abtroaster" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="beans.png">
+                <h2>Original Coffee</h2>
+                <p>Coffee roasting is the process of heating green coffee beans to develop flavor, aroma, and color. It involves carefully controlling temperature and time to achieve desired roast levels, ranging from light to dark. The roasted beans undergo chemical changes, producing the distinctive taste and fragrance associated with different coffee varieties. .</p>
+            </div>
+            <div class="sub-sub-abtroaster" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <img src="coffeecup.webp">
+                <h2>Self Roasted</h2>
+                <p>During roasting, beans go through various stages: drying, first crack (audible when beans expand), and, if desired, a second crack. Roasters use different methods like air roasting or drum roasting, each influencing the final flavor profile. Factors such as bean origin, altitude, and processing also impact the roasting outcome, resulting in a diverse spectrum of coffee flavors appreciated by enthusiasts.
+                </p>
+            </div>
+            <div class="sub-sub-abtroaster" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <img src="roaster.png">
+                <h2>In-House Coffee Roaster</h2>
+                <p>Imagine the intoxicating aroma of freshly roasted coffee beans, swirling around you like a warm hug. The rhythmic hum of the roaster becomes a captivating soundtrack, while the rich hues of roasting beans paint a mesmerizing scene. This isn't just a coffee shop, it's an immersive theater of taste and aroma, orchestrated by our very own in-house coffee roaster.</p>
+            </div>
+        </div>     
+             <div class="image"><img src="CoffeeRoaster.jpg"/>
+                 <div class="image-below"></div>
+             </div>      
+    </div> 
+
+
+
+
+    <section class="parallax-5" id="spec">  
+        <div class="parallax-inner">
+            <p id="create"> OUR SIGNATURE INDULGENCES !</p>
+            <div class="abt04">
+                <div class="all-the-foods">
+
+                    <div class="clip-path-container">
+                        <div class="description-holder">
+                            <h4>Coffee</h4>
+                            <p>Dive into the diverse delights of different coffee types, each a unique journey for your taste buds</p>
+                        </div>
+                        <div class="food coffee"></div>
+                    </div>
+
+                    <div class="clip-path-container">
+                        <div class="description-holder">
+                            <h4>Cheese</h4>
+                            <p>Each region, each cow, each cheesemaker whispers a unique tale waiting to be savored</p>
+                        </div>
+                        <div class="food cheese"></div>
+                    </div>
+                    
+                    <div class="clip-path-container">
+                        <div class="description-holder">
+                            <h4>Bread</h4>
+                            <p>The world's most delectable breads, where we'll delve into regional specialties and sweet treats</p>
+                        </div>
+                        <div class="food bread"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="menu-button">
+                    <button type="submit" id="menu-button"><a href="https://bit.ly/KoeTheKafeMenu" style="text-decoration: none;color:black;">Menu</a></button>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="space1">
+        <ul class="info">
+            <li style="--i: 1;">
+                <img src="listimg1.jpg" alt="user image">
+                <b>Highlights</b><br>☕Live Music &nbsp;☕Rooftop Seating<br>☕Live Performances 
+            </li>
+            <li style="--i: 2;">
+                <img src="listimg3.webp" alt="user image"> 
+                <b>Dining Options</b><br>☕Brunch&nbsp;☕Lunch<br>☕Dinner&nbsp;☕Dessert<br>☕Seating                   
+            </li>
+            <li style="--i: 3;">
+                <img src="listimg4.jpg" alt="user image">
+                <b>Crowd</b><br>☕Family Friendly&nbsp;☕Groups<br>☕LBGTQ+ Friendly                   
+            </li>
+            <li style="--i: 4;">
+                <img src="listmainim.jpeg" alt="user image">
+                <b>🍰Discover the difference we make...</b>                        
+            </li>
+        </ul>
+    </div>   
+
+    
+    
+
+        <div id="popup" class="popup">
+            <video width="320"
+            height="240" controls>
+                <source src="kafevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="close-popup" class="close-popup">Close</button>
+       </div>
+
+
+
+
+    <section class="prlx-4" id="review"> 
+        <div class="prlx-inner">
+            <!-- <div class="space"></div> -->
+            <p id="create" style="padding-top: 90px;">WHISPERS OF DELIGHT !</p>
+            <div class="container">
+                <button id="prev" onclick="goPrev()"><</button>
+                <div class="testimonial">
+                    <div class="cntnt">
+                        <div class="sld">
+                            <p>
+                                This quaint cafe boasts an impressive array of single-origin beans and 
+                                inventive latte art. My cappuccino was smooth and frothy, with a complex nutty 
+                                aroma. Beyond coffee, the pastries are divine - the flaky almond croissant 
+                                was pure bliss. The warm brick walls, comfy cushions, and music playing create
+                                an irresistible atmosphere for lingering conversation or solo reading sessions.
+                                5/5 stars, would recommend for a cozy coffee escape.
+                            </p>
+                            <i class="bx bxs-quote-alt-left quote-icon"></i>
+                            <div class="details">
+                                <span class="name">Cozy Coffee Cravings</span>
+                                <span class="job">"A haven for coffee connoisseurs and ambiance enthusiasts!"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cntnt">
+                        <div class="sld">
+                            <p>
+                            This cafe is a vibrant hub for students and creatives. The coffee selection is vast, from 
+                            classic espressos to cold brews and flavored lattes. I loved their signature "Bee Sting Latte" 
+                            with honey and cinnamon. The food menu is equally exciting, with fresh salads, hearty sandwiches,
+                            and decadent desserts. The open layout, vibrant artwork, and upbeat music create a lively
+                            atmosphere perfect for catching up with friends or grabbing a quick bite on the go. 4/5 stars,
+                            great for an energetic coffee experience.
+                            </p>
+                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+                            <div class="details">
+                                <span class="name">The Lively Bean</span>
+                                <span class="job">"Buzzing with energy and flavor!"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cntnt">
+                        <div class="sld">
+                            <p>
+                            This hidden gem nestled in a side street surprised me with its hidden treasures. The coffee 
+                            menu is curated and ethically sourced, with pour-over options and unique nitro cold brews. My
+                            Orange Zest Frappe was a delightful burst of citrus and floral notes. The food is light and 
+                            healthy, with avocado toast and quinoa bowls being standouts. The minimalist decor, calming
+                            background music, and abundant natural light create a serene atmosphere ideal for focusing on 
+                            work or enjoying a quiet moment. 5/5 stars, my new favorite hidden coffee retreat.
+                            </p>
+                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+                            <div class="details">
+                                <span class="name">The Hidden Gem</span>
+                                <span class="job">"Tucked away but worth the trip!"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="nxt" onclick="goNext()">></button>
+            </div>
+        </div>
+    </section>   
+
+
+    <div class="space2"></div>
+    
+   
+
+
+    <section class="form-1">
+        <div class="form-inner">
+            
+                <!--<form onsubmit="sendEmail(); reset(); return false;">-->
+                    <form  id="enquiry-form">
+                        <div class="form-reservation-2">  
+                    <div class="form-reservation">
+                        <p id="reserve-p">Dining at Koe</p>
+                    <div class="pre-form"><input type="text" name="username" id="nm" class="form-reserve" required placeholder="Name"></div>
+                    <div class="pre-form"><input type="email" name="eml" id="eml" class="form-reserve" required placeholder="Email"></div>
+                    <div class="pre-form"><input type="text" name="contact-no" id="phno" class="form-reserve" required placeholder="Phone Number"></div>
+                    <div class="pre-form"><input type="datetime" name="book-date" id="date" class="form-reserve" placeholder="Booking Date"></div>
+                    <div class="pre-form"><input type="number" name="count-adult" id="count-adlt" class="form-reserve" placeholder="Number of Adults"></div>
+                    <div class="pre-form"><input type="number" name="count-child" id="count-child" class="form-reserve" placeholder="Number of Children"></div>
+                    <div class="pre-form"><input type="submit" name="Reserve Table" id="book-table" value="Reserve Table">
+                    </div>
+                </div>
+                </form>
+           
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="footer">
+            <div class="footleft">
+                <p><img src="newlogo.png" id="footerlogo" id="home"/></p>
+                <div class="details">                    
+                    <p>Timings: 11:30am to 12:30am</p>
+                    <p>✉ abc@gmail.com</p>
+                    <p>📞 (91) 999999999</p>
+                    <p>📍 205, International Finance Centre, VIP Road, opp. Fire Station, Vesu, Surat, Gujarat 395007</p>
+                </div>
+                <!-- <p class="footercontent">Koe-The Kafe<i class="fab fa-facebook"></i></p> -->
+                <div class="footer-social-icon1">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+                </div>
+            </div>
+            <div class="footright footright-zoom">
+                <a href="https://www.google.com/maps/place/KOE+-+The+Kafe/@21.1415096,72.7810363,17z/data=!4m16!1m9!3m8!1s0x3be05327ccb9c45f:0xe73ce99228e97293!2sKOE+-+The+Kafe!8m2!3d21.1415096!4d72.7810363!9m1!1b1!16s%2Fg%2F11vbdr9wgd!3m5!1s0x3be05327ccb9c45f:0xe73ce99228e97293!8m2!3d21.1415096!4d72.7810363!16s%2Fg%2F11vbdr9wgd?entry=ttu">
+                <img src="map.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        import axios from 'axios';
+
+document.getElementById('enquiry-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(this);
+
+  axios.post('/send-email', Object.fromEntries(formData))
+    .then(response => {
+      if (response.status === 200) {
+        // Handle success (you can optionally log a message)
+        console.log('Email sent successfully');
+      } else {
+        // Handle error
+        console.error('Failed to send email');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
+    </script>
+    <script src="GalleryScript.js"></script>
+    <script src="review.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/5736e85798.js"></script>
+    <script src="script.js"></script>
+    <script src="2script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="preload.js"></script>
+    <script src="formreserve.js"></script>
+    <script src="slider.js"></script>
+    <script>AOS.init();</script>
+    <script>   
+
+    document.getElementById('close-popup').addEventListener('click', () => {
+    document.getElementById('popup').style.display='none';
+    });
+
+    </script>
+    <script>
+        // get reference to the navbar
+              var menuArea = document.getElementById('menu-area');
+              
+              // get reference to the sidebar
+              var sidebar = document.querySelector('.sidebar');
+              
+              // show the sidebar when clicking on the show button
+              function showSidebar() {
+               sidebar.style.display = 'block';
+              }
+              
+              // hide the sidebar when clicking on the hide button
+              function hideSidebar() {
+               sidebar.style.display = 'none';
+              }
+    </script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+   /* body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }*/
+
+    #countdown {
+      font-size: 2em;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-2a.jpg');
+      background-repeat: no-repeat;
+      
+    }
+    .timer{
+        padding:27px;
+    }
+    #days{
+        color:white;
+    }
+    #min{
+        color:white;
+    }
+    #secs{
+        color:white;
+    }
+    #hrs
+    {
+        color:white;
+    }
+     .timer .desc{
+        color:yellow;
+        font-size:15px;
+        padding:15px;
+        text-align:center;
+
+    }
+  </style>
+</head>
+<body>
+
+<div id="countdown">
+    <div class="timer">
+        <p id="days"></p>
+        <p class="desc">Days</p>
+    </div>
+    <div class="timer">
+        <p id="hrs"></p>
+        <p class="desc">Hours</p>
+    </div>
+    <div class="timer" >
+        <p id="min"></p>
+        <p class="desc">Minutes</p>
+    </div>
+    <div class="timer" >
+        <p id="secs"></p>
+        <p class="desc">Seconds</p>
+    </div>
+    
+</div>
+
+<script>
+  // Set the target date and time (year, month (0-indexed), day, hour, minute, second)
+  const targetDate = new Date(2024, 0, 10, 0, 0, 0); // January 1, 2023 00:00:00
+
+  function updateCountdown() {
+    const currentDate = new Date();
+    const timeDifference = targetDate - currentDate;
+
+    if (timeDifference <= 0) {
+      document.getElementById('countdown').innerHTML = 'Countdown expired!';
+    } else {
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerHTML = `${days}`;
+      document.getElementById('hrs').innerHTML =`${hours}`;
+      document.getElementById('min').innerHTML =` ${minutes}`;
+      document.getElementById('secs').innerHTML =`${seconds}`;
+    }
+  }
+
+  // Update the countdown every second
+  setInterval(updateCountdown, 1000);
+
+  // Initial call to set the initial state
+  updateCountdown();
+</script>
+
+</body>
+</html>
+

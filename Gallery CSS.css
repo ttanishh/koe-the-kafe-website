@@ -1,0 +1,244 @@
+.body{
+  background: rgb(213,187,170);
+  background: linear-gradient(90deg, rgba(213,187,170,1) 0%, rgba(141,99,70,1) 100%);
+}
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(4,320px);
+  row-gap: 40px;
+}
+
+.box-container img{
+  height: 300px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+  margin-left:200px;
+}
+.space {
+  height: 100px;
+  background: rgb(213,187,170);
+  background: linear-gradient(90deg, rgba(213,187,170,1) 0%, rgba(141,99,70,1) 100%);
+}
+
+.space1 {
+  height: 400px;
+  background: rgb(213,187,170);
+  background: linear-gradient(90deg, rgba(213,187,170,1) 0%, rgba(141,99,70,1) 100%);
+  display: flex;
+  padding: auto;
+  justify-content: center;
+}
+
+#glry-create{ 
+  text-align: center;
+  color: #20150f;
+  font-size:45px;
+  margin-top: 20px;
+  font-family: "Georgia";
+}
+
+.abtga{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway";
+}
+.smallsymbol{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.text-overlay {
+  position: relative;
+  width: 270px;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left:200px;
+}
+
+.text-overlay:hover .middle {
+  opacity: 1;
+}
+/* #hide{
+  display: none;
+} */
+
+li#show{
+  display: none;
+  }
+
+/* #show{
+  display: hidden;
+} */
+
+.img-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Raleway";
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+ /* Style the tab */
+ .tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+} 
+
+/* Tabs */
+ul.cat li {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ol.type li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 20px 0;
+}
+ol.type li a {
+	color: #20150f;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 12px 24px;
+	background: #eee;
+	border: 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Georgia";
+}
+ol.type li a.active {
+	color: #fff;
+	background-color: rgb(65, 42, 3);
+}
+ol.type li a:hover {
+	color: #fff;
+	background-color: rgb(65, 42, 3);
+}
+/*responsive*/
+@media only screen and (max-width:950px){
+  /* .gallery img{
+    height:250px;
+    width:180px;
+  }
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+  } */
+  .box-container{
+    grid-template-columns: repeat(2,200px);
+  }
+
+  .box-container img{
+    height: 230px;
+    width: 190px;
+  }
+  .body{
+    width: 133vw;
+  }
+  li#show{
+    display: block;
+    }
+
+  .tab {
+    margin-top: 180px;
+  }
+
+  .box-container img{
+    margin-left: 0;
+  }
+}
+
+
+
+/*insta*/
+.instapage{
+  display: flex;   
+  justify-content: space-around;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-left:60px ;
+  padding: auto;
+
+}
+.imageinsta{
+  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  /* margin-left: 90px;
+  margin-right: 90px; */
+  margin: 40px;
+  box-shadow: 23px 28px 23px -12px #794e37;
+}
+
+.instast{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: "Raleway";
+  /* margin-left: 60px;
+  margin-right: 60px; */
+}
+.instast img{
+  height: 25px;  
+}
+

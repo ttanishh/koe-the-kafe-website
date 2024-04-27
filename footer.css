@@ -1,0 +1,145 @@
+/*footer*/
+
+.footer{
+    display:flex;
+    background-color: #946D43;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footleft{
+    flex-basis:40%;
+    padding-left:42px;
+    padding-right:42px;
+    padding-bottom: 42px;
+    padding-top:5px;
+}
+.footleft p{
+    color:white;
+}
+.footright{
+    flex-basis:40%;
+    padding:10px;
+    
+}
+.footright h2{
+    text-align:center;
+    color:white;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+}
+#footerlogo{
+    width:156px;
+    height:106px;
+    padding:5px;
+    margin-top:1px;
+}
+#email{
+    padding:5px;
+    margin:5px;
+   background-color:  #1f2022;
+   border:1px solid #1f2022;
+   border-radius:5px;
+   color:white;
+   height:33px;
+}
+#mssg{
+    padding:5px;
+    margin:5px;
+    background-color:  #1f2022;
+    border:1px solid #1f2022;
+    border-radius:5px;
+    color:white;
+    height:79px;
+}
+#submit{
+    height:36px;
+    width:91px;
+    margin:5px;
+    background-color:  #1f2022;
+    border:1px solid #1f2022;
+    border-radius:5px;
+    color:white;
+}
+.footernav {
+    color:white;
+    text-decoration:none;
+    padding:3px;
+}
+.footer-social-icon1{
+    margin-top:30px;
+}
+
+.footer-social-icon1 a{
+    text-decoration:none;
+    font-size:30px;
+    margin-right:15px;
+    color:white;
+    display:inline-block;
+    transition:transform 0.5s;
+}
+
+.footer-social-icon1 a:hover{
+    color:#0192ff;
+    transform:translateY(-5px);
+}
+
+.footer-details{
+    margin-left: 33px;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+/*@media (max-width: 1000px) {
+
+	.footer-distri {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distri .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distri form input,
+	.footer-distri form textarea{
+		width: 250px;
+	}
+
+	.footer-distri form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distri{
+		padding: 30px;
+	}
+
+	.footer-distri .footerleft,
+	.footer-distri .footerright{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distri .footerleft{
+		margin-bottom: 40px;
+	}
+
+	.footer-distri form{
+		margin-top: 30px;
+	}
+
+	.footer-distri form{
+		display: block;
+	}
+
+	.footer-distri form button{
+		float: none;
+	}
+}*/
+

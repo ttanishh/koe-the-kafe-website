@@ -1,0 +1,96 @@
+#button-popup{
+    width: 100%;
+    /* height: 100vh; */
+    /* background: #3c5077; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway";
+}
+#btn{
+    background: rgba(210, 105, 30, 0.767);
+    font-family: "Georgia";
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* display: block; */
+    /* margin: auto; */
+    /* top: 0; */
+    /* border: 2px solid rgb(22, 219, 233); */
+    width: 300px;
+    text-align: center;
+    background-color: rgba(210, 105, 30, 0.767);
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 9999999;
+}
+
+.openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1)
+
+}
+
+.form-container h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 209px; */
+    padding-top: 22px;
+}
+
+input[type="text" i]{
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="email" i]{
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="number" i]{
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    margin-top: 22px;
+    /* border: 2px solid blue; */
+}
+#btn1{
+    width: 100px;
+    height: 30px;
+    /* border: 2px solid black; */
+    background-color: transparent;
+    font-size: 12px;
+    color: brown;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-container{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    
+}

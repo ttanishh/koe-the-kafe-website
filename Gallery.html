@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koe-Gallery</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="Gallery CSS.css">
+    <!-- <link rel="stylesheet" href="" -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body onload="slider()">
+    <div id="prld">
+    </div>
+    <div class="bnner" id="home">
+        <div class="sldr">
+            <img src="hero-slider-1.jpg" id="sldimg">
+        </div>
+        <div class="overlay">
+            <!--navbar-->
+            <div class="banner">
+                <div class="intro">
+                    <div class="introtext">
+                        <b>
+                        <span>K</span>
+                        <span>O</span>
+                        <span>E</span>
+                        <span>-</span>
+                        <span>T</span>
+                        <span>H</span>
+                        <span>E&nbsp;</span>                                     
+                        <span>K</span>
+                        <span>A</span>
+                        <span>F</span>
+                        <span>E</span> 
+                        </b>
+                        <p id="subtext"><br><i>❛Espresso Yourself❜</i></p>                                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <nav>
+        <div id="menu-area">
+            <div class="logo">
+                <a href="#"><img src="logo-removebg.png" alt=""></a>
+            </div>
+            <ul id="hanusha">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#spec">Specialities</a></li>
+                <li><a href="#gllry">Gallery</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li onclick=showSidebar() id="show"> <a href="#">=</a></li>
+                <li onclick=hideSidebar() id="hide"><a href="#">X</a></li>
+            </ul>
+
+
+
+        </div>
+        <ul class="sidebar">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#spec">Specialities</a></li>
+            <li><a href="#gllry">Gallery</a></li>
+            <li><a href="#review">Reviews</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav> -->
+
+
+    <nav>
+        <div id="menu-area" id="home">
+            <div class="logo">
+                <a href="index.html"><img src="newlogo.png" alt=""></a>
+            </div>
+            <ul id="hanusha">
+                <li class="hidden"><a href="index.html">Home</a></li>
+                <li class="hidden"><a href="#aboutt">About</a></li>
+                <li class="hidden"><a href="#spec">Specialities</a></li>
+                <li class="hidden"><a href="#review">Reviews</a></li>
+                <li class="hidden"><a href="#prld">Gallery</a></li>
+                <li class="hidden"><a href="activity.html">Activities</a></li>
+                <li class="hidden"><a href="#contact">Contact</a></li>
+                <li onclick=showSidebar() id="show"> <a href="#">=</a></li>
+               
+            </ul>
+
+
+
+        </div>
+        <ul class="sidebar">
+            <li onclick=hideSidebar() id="hide"><a href="#">X</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Specialities</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#prld">Gallery</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section  -->
+    <div>
+        <div class="space"></div>
+        <div id="glry-create"><b>GALLERY</b></div>
+        <div class="spc">
+            <div class="abtga" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"><p><b>Sunlight kisses buttery croissants, whispers of rye bread dancing with smoky ham.<br>
+             Steam whispers secrets from steaming mugs, a latte art serenade for cheese's savory charm...<br>
+             </b></p>
+            </div>
+        </div><br><br>
+
+        <div class="tab" id="gllry">
+            <ul class="cat">
+                <li>
+                    <ol class="type">
+                        <li><a href="#gllry" data-filter=".breakfast" class="tablinks"
+                                onclick="openFood(event, 'Coffee')" id="defaultOpen">BEVERAGE</a></li>
+                        <li><a href="#gllry" data-filter=".lunch" class="tablinks"
+                                onclick="openFood(event, 'Bread')">BREAD</a></li>
+                        <li><a href="#gllry" data-filter=".dinner" class="tablinks"
+                                onclick="openFood(event, 'Cheese')">CHEESE</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!-- Tab content -->
+
+        
+        <div id="Coffee" class="tabcontent">
+            <div class="box-container">
+                <div class="text-overlay zoom">
+                    <img src="coffee1.jpg">
+                    <div class="middle">
+                        <div class="img-text">Espresso Italiano</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee10.jpg">
+                    <div class="middle">
+                        <div class="img-text">Strawberry Milk Smoothie</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee4.jpg">
+                    <div class="middle">
+                        <div class="img-text">Dark Hot Chocolate</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee2.jpg">
+                    <div class="middle">
+                        <div class="img-text">Flat White</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee3.jpg">
+                    <div class="middle">
+                        <div class="img-text">Peanut Butter Latte</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee12.jpg">
+                    <div class="middle">
+                        <div class="img-text">Fresh Lime Soda</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee5.jpg">
+                    <div class="middle">
+                        <div class="img-text">Orange Zest Mocha</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee9.jpg">
+                    <div class="middle">
+                        <div class="img-text">Affogato</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee7.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cold Brew Ginger Ale</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee11.jpg">
+                    <div class="middle">
+                        <div class="img-text">Brownie Mocha Frappe</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee8.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cold Brew- Cranberry</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="coffee6.jpg">
+                    <div class="middle">
+                        <div class="img-text">Mint Mojito</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="Bread" class="tabcontent">
+            <div class="box-container">
+                <div class="text-overlay zoom">
+                    <img src="bread1.jpg">
+                    <div class="middle">
+                        <div class="img-text">Fresh Avocado Burger</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread10.jpg">
+                    <div class="middle">
+                        <div class="img-text">Baguette</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="picante.jpg">
+                    <div class="middle">
+                        <div class="img-text">Picante</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread2.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cottage Cheese Steak Burger</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread3.jpg">
+                    <div class="middle">
+                        <div class="img-text">Smoked Tomato Brie</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread12.jpg">
+                    <div class="middle">
+                        <div class="img-text">Whole Wheat Bread</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread5.jpg">
+                    <div class="middle">
+                        <div class="img-text">Hummus Olive De Avocado</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread9.jpg">
+                    <div class="middle">
+                        <div class="img-text">Sourdough Bread</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="focaccia.jpg">
+                    <div class="middle">
+                        <div class="img-text">Focaccia</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread11.jpg">
+                    <div class="middle">
+                        <div class="img-text">Croissant</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread8.jpg">
+                    <div class="middle">
+                        <div class="img-text">Della Casa</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="bread6.jpg">
+                    <div class="middle">
+                        <div class="img-text">Tomato Basil Burrata Sandwich</div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+
+        
+        <div id="Cheese" class="tabcontent">
+            <div class="box-container">
+                <div class="text-overlay zoom">
+                    <img src="Baby Burrata.jpg">
+                    <div class="middle">
+                        <div class="img-text">Baby Burrata</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Brie.jpg">
+                    <div class="middle">
+                        <div class="img-text">Brie</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Cheddar.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cheddar</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Camembert.jpg">
+                    <div class="middle">
+                        <div class="img-text">Camembert</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Feta.jpg">
+                    <div class="middle">
+                        <div class="img-text">Feta</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Ricotta.jpg">
+                    <div class="middle">
+                        <div class="img-text">Ricotta</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Cheese Mix.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cheese Mix</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Mascarpone.jpg">
+                    <div class="middle">
+                        <div class="img-text">Mascarpone</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Cottage Cheese.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cottage Cheese</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Cheese Platter.jpg">
+                    <div class="middle">
+                        <div class="img-text">Cheese Platter</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Mozzarella.jpg">
+                    <div class="middle">
+                        <div class="img-text">Mozzarella</div>
+                    </div>
+                </div>
+                <div class="text-overlay zoom">
+                    <img src="Parmesan.jpg">
+                    <div class="middle">
+                        <div class="img-text">Parmesan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Gallery Section close -->
+<p class="instast" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"><b>Join the inner circle: We're building a community, not just a following.<br> Share your thoughts, get the inside scoop, and be part of the magic.<br> 
+    Follow us on Instagram and let's get acquainted </b>
+<a href="#"> <img src="instaiconn.png"></a></p>
+<div class="instapage"><a href="#">          
+        <img src="instapage.jpg" class="imageinsta">
+        <img src="insta3.jpg" class="imageinsta">  
+        <img src="insta4.jpg" class="imageinsta">           
+        <img src="insta2.jpg" class="imageinsta">  </a>   
+</div>
+<!--Footer-->
+<!-- <section id="contact">
+    <div class="footer">
+        <div class="footleft">
+            <p><img src="logo-removebg.png" id="footerlogo" /></p>
+            <div class="details">
+                <h2>Contacts</h2>
+                <p>Email: abc@gmail.com</p>
+                <p>Phone: (91) 999999999</p>
+            </div>
+            <p class="footercontent">Koe-The Kafe<i class="fab fa-facebook"></i></p>
+            <div class="footer-social-icon1">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footright">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="email" placeholder="Email" id="email">
+                <textarea name="message" rows="3" placeholder="Your Message" id="mssg"></textarea>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</section> -->
+<section id="contact">
+    <div class="footer">
+        <div class="footleft">
+            <p><img src="newlogo.png" id="footerlogo" id="gallery"/></p>
+            <div class="details">
+                <p>Timings: 11:30am to 12:30am</p>
+                <p>✉ abc@gmail.com</p>
+                <p>📞 (91) 999999999</p>
+                <p>📍 205, International Finance Centre, VIP Road, opp. Fire Station, Vesu, Surat, Gujarat 395007</p>
+            </div>
+            <!-- <p class="footercontent">Koe-The Kafe<i class="fab fa-facebook"></i></p> -->
+            <div class="footer-social-icon1">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+            </div>
+        </div>
+        <div class="footright footright-zoom">
+            <a href="https://www.google.com/maps/place/KOE+-+The+Kafe/@21.1415096,72.7810363,17z/data=!4m16!1m9!3m8!1s0x3be05327ccb9c45f:0xe73ce99228e97293!2sKOE+-+The+Kafe!8m2!3d21.1415096!4d72.7810363!9m1!1b1!16s%2Fg%2F11vbdr9wgd!3m5!1s0x3be05327ccb9c45f:0xe73ce99228e97293!8m2!3d21.1415096!4d72.7810363!16s%2Fg%2F11vbdr9wgd?entry=ttu">
+            <img src="map.jpg">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<script src="GalleryScript.js"></script>
+<script src="review.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/5736e85798.js"></script>
+<script src="script.js"></script>
+<script src="2script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="preload.js"></script>
+<script src="sidebarnav.js"></script>
+<script src="slider.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+
+</html>
